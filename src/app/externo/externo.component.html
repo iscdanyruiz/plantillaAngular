@@ -1,0 +1,26 @@
+<!-- Ejemplos de pipes para las fechas -->
+<!-- Formato: fecha completa -->
+{{ fecha | date: "FullDate" }}
+
+<!-- Formato: personalizado -->
+{{ fecha | date: "dd/MM/yyyy" }}
+
+
+<!-- Ejemplos de pipes converti minusculas a mayusculas-->
+<!-- Formato: personalizado -->
+{{ fecha | date: "dd/MM/yyyy" | uppercase }}
+{{'hola que hace' | uppercase}}
+{{'hola que hace' | lowercase}}
+
+<!-- Ejemplos de pipes personalizados -->
+{{4| calculadora: 2}}
+
+<hr />
+<input type="text" [(ngModel)]="userId" (keyup)="cargaUsuario()" name="" id="" />
+<div *ngIf="user">
+  <img [src]="user.avatar" alt="Imagen de usuario" width="200" />
+  <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+</div>
+<div class="cargar" [class.visible]="!user">
+  Cargando...
+</div>

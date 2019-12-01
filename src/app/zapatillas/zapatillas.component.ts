@@ -1,32 +1,28 @@
 import { Component, OnInit } from "@angular/core";
 import { Zapatilla } from "../models/zapatilla";
+import { ZapatillasService } from '../services/zapatilla.service';
 
 @Component({
   selector: "zapatillas",
-  templateUrl: "./zapatillas.component.html"
+  templateUrl: "./zapatillas.component.html",
+  providers: [ZapatillasService]
 })
-export class ZapatillasComponent {
+
+export class ZapatillasComponent implements OnInit {
+  public color: string;
+  public marcas: string[];
+  public miMarca: string;
   public titulo: string = "Componente de zapatillas";
   public zapatillas: Array<Zapatilla>;
-  public marcas: string[];
-  public color: string;
-  public miMarca: string;
 
-  constructor() {
-    this.marcas = new Array();
-    this.zapatillas = [
-      new Zapatilla("Nike Airmax", "Nike", "Rojas", 40, true),
-      new Zapatilla("Rebook Classic", "Reebok", "Blanco", 80, true),
-      new Zapatilla("Rebook Spartan", "Reebok", "Negra", 180, true),
-      new Zapatilla("Nikke Runner MD", "Nike", "Negras", 60, true),
-      new Zapatilla("Adidas Yezzy", "Adidas", "Gris", 180, false),
-      new Zapatilla("Bombon rallado", "Bombon", "Gris", 190, false)
-    ];
+  constructor(private _zapatillaService: ZapatillasService) {
+    this.miMarca = "Fila";
     this.color = "yellow";
+    this.marcas = new Array();
   }
 
   ngOnInit() {
-    console.log(this.zapatillas);
+    this.zapatillas = this._zapatillaService.getZapatillas();
     this.getMarcas();
   }
 
@@ -36,7 +32,6 @@ export class ZapatillasComponent {
         this.marcas.push(zapatilla.marca);
       console.log(index);
     });
-
     console.log(this.marcas);
   }
 
@@ -53,11 +48,11 @@ export class ZapatillasComponent {
     this.marcas.splice(index, 1);
   }
 
-  onBlur(){
+  onBlur() {
     alert('has salido del input');
   }
 
-  mostrarPalabra(){
+  mostrarPalabra() {
     alert(this.miMarca);
   }
 }

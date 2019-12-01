@@ -1,0 +1,25 @@
+body{
+    font-size: 16px;
+}
+.cargar{
+    transition: all 13s ease-out;
+    background-color: blue;
+    color:white;
+    display: none;
+    font-size: 4em;
+    left:0;
+    padding: 10px 5px;
+    position: fixed;
+    text-align: center;
+    top:50%;
+    width: 100%;
+    opacity: 0.5;
+    -webkit-transition: all 13s ease-out;
+    -moz-transition: all 13s ease-out;
+    -o-transition: all 13s ease-out;
+    transition: all 13s ease-out;
+}
+.cargar.visible{
+    display: block;
+    opacity: 1;
+}
