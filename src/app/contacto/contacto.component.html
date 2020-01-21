@@ -1,7 +1,7 @@
 <h2>Contacto</h2>
 <form #formContacto="ngForm" (ngSubmit)="(onSubmit(formContacto))">
   <label for="nombre">Nombre</label>
-  <input
+  <input class="form-control"
     type="text"
     name="nombre"
     id=""
@@ -14,7 +14,7 @@
   <br />
 
   <label for="apellidos">Apellidos</label>
-  <input
+  <input class="form-control"
     type="text"
     name="apellidos"
     id=""
@@ -27,7 +27,7 @@
   <br />
 
   <label for="email">Email</label>
-  <input
+  <input class="form-control"
     type="email"
     name="email"
     id=""
@@ -53,3 +53,12 @@
 
   <input type="submit" value="Enviar" [disabled]="!formContacto.form.valid"/>
 </form>
+
+<select multiple="multiple" id="my-select" name="my-select[]">
+  <option value='elem_1'>elem 1</option>
+  <option value='elem_2'>elem 2</option>
+  <option value='elem_3'>elem 3</option>
+  <option value='elem_4'>elem 4</option>
+  ...
+  <option value='elem_100'>elem 100</option>
+</select>

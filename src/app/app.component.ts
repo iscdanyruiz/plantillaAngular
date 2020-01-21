@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Configuracion } from "./models/configuracion";
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-root',

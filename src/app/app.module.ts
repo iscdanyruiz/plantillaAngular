@@ -11,7 +11,6 @@ import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
 import { routing, appRoutingProviders } from './app.routing';
 import { ExternoComponent } from './externo/externo.component';
-import {CalculadoraPipe} from './pipes/calculadora.pipe';
 import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
@@ -30,7 +29,6 @@ import { ContactoComponent } from './contacto/contacto.component';
     FormsModule,
     routing,
     HttpClientModule,
-    CalculadoraPipe
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
