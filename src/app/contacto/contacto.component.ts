@@ -13,10 +13,14 @@ export class ContactoComponent implements OnInit {
   }
 
   ngOnInit() {}
-
+  ngAfterViewInit(){
+    (<any>jQuery('#my-select')).multiSelect();
+  }
   onSubmit(form){
     form.reset;
     console.log("Evento submit lanzado");
     console.log(this.usuario);
   }
+
+  
 }

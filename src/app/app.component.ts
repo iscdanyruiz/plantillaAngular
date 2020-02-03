@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Configuracion } from "./models/configuracion";
 import { NgSelectConfig } from '@ng-select/ng-select';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-root',
