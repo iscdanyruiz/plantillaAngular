@@ -9,18 +9,20 @@ import { VideojuegoComponent } from "./videojuego/videojuego.component";
 import { CursosComponent } from "./cursos/cursos.component";
 import { ExternoComponent } from "./externo/externo.component";
 import { ContactoComponent } from './contacto/contacto.component';
+import { SeleccionarPokemonComponent } from './seleccionar-pokemon/seleccionar-pokemon.component';
 
 //Array de rutas
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "home", component: HomeComponent },
-  { path: "zapatillas", component: ZapatillasComponent },
-  { path: "videojuego", component: VideojuegoComponent },
+  { path: "**", component: SeleccionarPokemonComponent },
+  { path: "contacto", component: ContactoComponent },
   { path: "cursos/", component: CursosComponent },
   { path: "cursos/:nombre/:followers", component: CursosComponent },
   { path: "externo", component: ExternoComponent },
-  { path: "contacto", component: ContactoComponent }
-  { path: "**", component: HomeComponent }
+  { path: "home", component: HomeComponent },
+  { path: "pokemon", component: SeleccionarPokemonComponent },
+  { path: "videojuego", component: VideojuegoComponent },
+  { path: "zapatillas", component: ZapatillasComponent },
 
 ];
 

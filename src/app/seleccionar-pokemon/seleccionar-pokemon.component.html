@@ -1,0 +1,10 @@
+<p>seleccionar-pokemon works!</p>
+
+<ng-select
+  [items]="pokemons"
+  bindLabel="name"
+  bindValue="id"
+  [(ngModel)]="selectedPokeId"
+>
+</ng-select>
+<br/>Seleccionado: {{selectedPokeId}}
