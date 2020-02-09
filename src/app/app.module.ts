@@ -14,6 +14,8 @@ import { ExternoComponent } from "./externo/externo.component";
 import { ContactoComponent } from "./contacto/contacto.component";
 import { NgSelectModule } from '@ng-select/ng-select';
 import { SeleccionarPokemonComponent } from './seleccionar-pokemon/seleccionar-pokemon.component';
+import { ListarPokemonComponent } from './listar-pokemon/listar-pokemon.component';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { SeleccionarPokemonComponent } from './seleccionar-pokemon/seleccionar-p
     HomeComponent,
     ExternoComponent,
     ContactoComponent,
-    SeleccionarPokemonComponent
+    SeleccionarPokemonComponent,
+    ListarPokemonComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
+    DataTablesModule,
     FormsModule,
     HttpClientModule,
     NgSelectModule,

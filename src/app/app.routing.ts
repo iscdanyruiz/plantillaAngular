@@ -10,11 +10,10 @@ import { CursosComponent } from "./cursos/cursos.component";
 import { ExternoComponent } from "./externo/externo.component";
 import { ContactoComponent } from './contacto/contacto.component';
 import { SeleccionarPokemonComponent } from './seleccionar-pokemon/seleccionar-pokemon.component';
+import { ListarPokemonComponent } from './listar-pokemon/listar-pokemon.component';
 
 //Array de rutas
 const appRoutes: Routes = [
-  { path: "", component: HomeComponent },
-  { path: "**", component: SeleccionarPokemonComponent },
   { path: "contacto", component: ContactoComponent },
   { path: "cursos/", component: CursosComponent },
   { path: "cursos/:nombre/:followers", component: CursosComponent },
@@ -23,7 +22,7 @@ const appRoutes: Routes = [
   { path: "pokemon", component: SeleccionarPokemonComponent },
   { path: "videojuego", component: VideojuegoComponent },
   { path: "zapatillas", component: ZapatillasComponent },
-
+  { path: "pokemon/lista", component: ListarPokemonComponent },
 ];
 
 //Exportar el modulo del router

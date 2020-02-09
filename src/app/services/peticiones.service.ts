@@ -13,8 +13,12 @@ export class PeticionesService {
     this.pokeUrl = "https://pokeapi.co/api/v2/";
   }
 
+  getUsers(): Observable<any> {
+    return this._http.get(this.url + "api/users?page=2");
+  }
+  
   getUser(userId: any): Observable<any> {
-    return this._http.get(this.url + "api/users/" + userId); 
+    return this._http.get(this.url + "api/users/" + userId);
   }
 
   getPokemons(): Observable<any> {

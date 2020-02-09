@@ -27,12 +27,23 @@
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./src/assets/multiselect/css/multi-select.css",
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+	      "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
+              "./src/assets/material.min.css",
+              "./src/assets/dataTables.material.min.css",
               "./src/assets/styles.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./src/assets/multiselect/js/jquery.multi-select.js"
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "./src/assets/multiselect/js/jquery.multi-select.js",
+	      "node_modules/jszip/dist/jszip.js",
+              "node_modules/datatables.net-buttons/js/dataTables.buttons.js",
+              "node_modules/datatables.net-buttons/js/buttons.colVis.js",
+              "node_modules/datatables.net-buttons/js/buttons.flash.js",
+              "node_modules/datatables.net-buttons/js/buttons.html5.js",
+              "node_modules/datatables.net-buttons/js/buttons.print.js"
             ]
           },
           "configurations": {

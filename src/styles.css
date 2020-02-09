@@ -1,21 +1,31 @@
 @import "~@ng-select/ng-select/themes/material.theme.css";
-hola{
-    background-color: cornflowerblue;
+
+hola {
+  background-color: cornflowerblue;
 }
+
 @import "~bootstrap/dist/css/bootstrap.css";
-.altoPrecio{
-    color: gray;
-    font-size: 28px;
+
+.altoPrecio {
+  color: gray;
+  font-size: 28px;
 }
 
-.fondoRojo{
-    background-color: red;
+.fondoRojo {
+  background-color: red;
 }
 
-.subrayado{
-    text-decoration: underline;
+.subrayado {
+  text-decoration: underline;
 }
 
-.active{
-    border: 3px solid yellow;
+.active {
+  border: 3px solid yellow;
+}
+
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+  background-image: none;
 }
