@@ -5,6 +5,14 @@
 </p>
 <hr>
 <h3>Pokemones</h3>
+<div>
+  <ul *ngFor="let pokemon of pokemons">
+    <li>{{pokemon.id}}</li>
+    <li>{{ pokemon.name }}</li>
+  </ul>
+</div>
+
+<hr>
 <div class="admin-form">
   <table datatable [dtOptions]="dtOptions[0]" [dtTrigger]="dtTrigger" class="mdl-data-table" style="width:100%">
     <thead>

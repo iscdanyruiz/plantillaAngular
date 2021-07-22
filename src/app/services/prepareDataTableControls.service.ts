@@ -28,7 +28,7 @@ export class PrepareDataTableControls {
         'search': 'Palabra clave:',
     }
 
-    dtOptions: any[] = [];
+    dtOptions: any[] = []; 
 
     onStartOptions() {
         this.dtOptions = new Array();
