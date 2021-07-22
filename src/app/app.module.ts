@@ -13,9 +13,8 @@ import { routing, appRoutingProviders } from "./app.routing";
 import { ExternoComponent } from "./externo/externo.component";
 import { ContactoComponent } from "./contacto/contacto.component";
 import { NgSelectModule } from '@ng-select/ng-select';
-import { SeleccionarPokemonComponent } from './seleccionar-pokemon/seleccionar-pokemon.component';
-import { ListarPokemonComponent } from './listar-pokemon/listar-pokemon.component';
 import { DataTablesModule } from 'angular-datatables';
+import { OficinaComponent } from "./oficina/oficina.component";
 
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { DataTablesModule } from 'angular-datatables';
     HomeComponent,
     ExternoComponent,
     ContactoComponent,
-    SeleccionarPokemonComponent,
-    ListarPokemonComponent
+    OficinaComponent
   ],
   imports: [
     AppRoutingModule,

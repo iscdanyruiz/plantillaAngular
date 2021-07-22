@@ -33,7 +33,7 @@ export class ExternoComponent implements OnInit {
 
   cargaUsuario() {
     this.user = false;
-    this._peticionesService.getUser(this.userId).subscribe(
+    this._peticionesService.getEmployeeById(this.userId).subscribe(
       result => {
         this.user = result.data;
         console.log(result);
@@ -45,7 +45,7 @@ export class ExternoComponent implements OnInit {
   }
 
   onSubmit(form) {
-    this._peticionesService.addUser(this.new_user).subscribe(
+    this._peticionesService.addEmployee(this.new_user).subscribe(
       response => {
         this.usuario_guardado = response;
         console.log(response);

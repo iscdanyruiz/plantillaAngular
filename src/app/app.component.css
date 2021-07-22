@@ -1,0 +1,1005 @@
+/* Wow Efects*/
+@import "../../node_modules/wowjs/css/libs/animate.css";
+@import "~@ng-select/ng-select/themes/material.theme.css";
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+/* width */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9b9696;
+  transition: ease-in-out all 0.45s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #646161;
+}
+
+
+/*Container*/
+.panel.theme-primary {
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.panel-control-contenedor {
+  border-left: 1px solid #f3eeee;
+  border-radius: 0;
+  margin: 0 0 0 15px;
+  padding-left: 15px;
+}
+
+.panel-control-titulo {
+  color: rgba(117, 143, 158, 0.99);
+  font-size: 1.25em;
+  margin: 15px auto;
+  max-width: 100%;
+}
+
+/*Datatable*/
+div#datatable_wrapper {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.admin-form button.dt-button {
+  background-color: #FFF;
+  color: #6b6a6a;
+  margin: 4px auto 0 auto;
+}
+
+.btn-default.active,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover,
+.open>.dropdown-toggle.btn-default {
+  background-color: #efefefad;
+  color: #666;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  background: #fff;
+  border-radius: 0;
+  border: 1px solid #c5c5c591;
+  color: #3498db;
+  margin-left: -1px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: #ffffff;
+  cursor: default;
+  z-index: 2;
+}
+
+.admin-form button.dt-button:hover {
+  background-color: #eee;
+  border-color: #ddd;
+  color: #1d6fa5;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: #3498db;
+  border-color: #ddd;
+  color: #FFF;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-left: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+  background-color: #ffffff;
+  border-color: #dddddd;
+  box-shadow: none;
+  color: #a5a5a5;
+  cursor: default;
+  cursor: not-allowed;
+}
+
+.pagination>.disabled>a,
+.pagination>.disabled>a:focus,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>span,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>span:hover {
+  background-color: #ffffff;
+  border-color: #dddddd;
+  color: #777777;
+  cursor: not-allowed;
+}
+
+.group {
+  display: none;
+}
+
+.wrapper {
+  background-color: #F2F2F2;
+}
+
+.dataTables_wrapper .dataTables_info {
+  margin-top: 5px;
+  padding-top: 8px;
+  white-space: nowrap;
+}
+
+/*Notificaciones*/
+.alert.ui-pnotify-container.alert-success {
+  background-color: #00945a;
+}
+
+.alert.ui-pnotify-container.alert-success span.sidebar-title {
+  color: #00ff90;
+  transition: ease-in-out all 0.45s;
+}
+
+.alert.ui-pnotify-container.alert-success span.sidebar-title:hover {
+  color: #00ff37ed;
+}
+
+/*Margenes*/
+.mt-1 {
+  margin-top: 1%;
+}
+
+.mt-2 {
+  margin-top: 2%;
+}
+
+.mt-3 {
+  margin-top: 3%;
+}
+
+.mt-4 {
+  margin-top: 4%;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.ml-2 {
+  margin-left: 1%;
+}
+
+.ml-3 {
+  margin-left: 2%;
+}
+
+.ml-3 {
+  margin-left: 3%;
+}
+
+.ml-4 {
+  margin-left: 4%;
+}
+
+.ml-5 {
+  margin-left: 5%;
+}
+
+#dataTable {
+  font-size: 11px !important;
+}
+
+#dataTable>thead>tr>th.hideRows[class*="sort"]::after {
+  display: none
+}
+
+html,
+body {
+  height: 100%;
+  background-color: transparent;
+}
+
+body {
+  margin: 0 auto;
+  /*font-family: Roboto, "Helvetica Neue", sans-serif;*/
+}
+
+.avatar {
+  display: inline-block;
+  margin-top: 4%;
+}
+
+.custom-tooltip-blue {
+  background-color: rgb(4, 11, 15);
+  color: #ffffff;
+  overflow: visible;
+}
+
+.switcht {
+  display: inline-block;
+  height: 23px;
+  position: relative;
+  width: 36px;
+}
+
+.switcht input {
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+
+.slider {
+  -webkit-transition: .4s;
+  background-color: #e9573f;
+  border-radius: 2px;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  -webkit-transition: .4s;
+  background-color: white;
+  bottom: 5px;
+  content: "";
+  height: 13px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 10px;
+}
+
+input:checked+.slider {
+  background-color: #70ca63;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #70ca63;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+.close,
+.close span:focus {
+  outline-width: 0;
+}
+
+/**
+NUMERIC INPUT
+*/
+.admin-form .gui-input.ctlNumeric {
+  display: inline-block;
+  height: auto;
+  margin: 1px 0 0 5px;
+  max-width: 60px;
+  padding: 3px 5px 2px 5px;
+  vertical-align: middle;
+}
+
+.admin-form .gui-input.ctlNumeric:hover {
+  border: 1px solid #ddd;
+}
+
+.admin-form .gui-input.ctlNumeric:focus {
+  border-color: #5faee3;
+  outline: 0;
+}
+
+/**
+NG-SELECT
+*/
+
+.field .ng-select .ng-select-container {
+  overflow: visible;
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  background-color: #FFF;
+  border-radius: 2px;
+  border: solid 1px #dddddd;
+  color: #626262;
+  margin: 0 0.4375em 0.4375em 0;
+  padding: 4px 5px;
+  text-align: center;
+}
+
+.ng-select .ng-select-container:after {
+  border-bottom: thin solid rgba(0, 0, 0, 0.21);
+}
+
+.ng-select.ng-select-focused .ng-select-container:after {
+  border-color: #379adc;
+  border-width: 2px
+}
+
+.ng-select.ng-select-focused .ng-select-container.ng-appearance-outline:after,
+.ng-select.ng-select-focused .ng-select-container.ng-appearance-outline:hover:after {
+  border-color: #379adc;
+  border-width: 2px
+}
+
+.ng-select.ng-select-focused .ng-select-container .ng-value-container .ng-placeholder {
+  transform: translateY(-1.28125em) scale(0.75) perspective(100px) translateZ(0.001px);
+  color: #379adc
+}
+
+.ng-select.ng-select-focused .ng-select-container .ng-arrow-wrapper .ng-arrow {
+  color: #379adc
+}
+
+/*JOBS*/
+.respuesta {
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.respuestas {
+  display: inline-block;
+  max-height: 100px;
+  overflow-x: hidden;
+  width: 300px;
+}
+
+table.transparente tbody tr {
+  background-color: transparent;
+}
+
+table.transparente tbody td:last-child,
+table.transparente tbody td:first-child {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*MULTI SELECT*/
+
+.admin-form .ms-selectable input,
+.admin-form .ms-selection input {
+  border-left: none;
+  border-radius: 0;
+  border-right: none;
+  border-top: none;
+  padding-left: 5px;
+}
+
+.ms-container .ms-optgroup-label {
+  color: #929292;
+  padding: 5px 0px 0px 13px;
+  text-align: left;
+  transition: ease-in-out all 0.45s;
+}
+
+ul.ms-optgroup:hover li:first-child,
+.ms-selection ul.ms-optgroup li:first-child {
+  color: rgba(0, 0, 0, 0.644);
+  font-weight: 600;
+}
+
+ul.ms-optgroup:hover li:last-child,
+.ms-selection ul.ms-optgroup li:last-child {
+  background-color: #0088cca3;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ms-selection .dos ul.ms-optgroup li:last-child {
+  background-color: #00cc28c2;
+}
+
+.ms-selection .tres ul.ms-optgroup li:last-child {
+  background-color: #cca500c2;
+}
+
+.ms-container .ms-optgroup-label+li.ms-elem-selectable,
+.ms-container .ms-optgroup-label+li.ms-elem-selection {
+  border: none;
+  border-bottom: 1px #ddd solid;
+}
+
+/*TIME PICKER*/
+.owl-dt-inline-container,
+.owl-dt-popup-container {
+  min-width: 235px;
+  width: auto;
+}
+
+.owl-dt-control .owl-dt-control-content {
+  color: #3498db;
+  font-size: 15px;
+}
+
+.owl-dt-calendar-control {
+  background: #F5F5F5;
+  border-bottom: 1px solid #E5E5E5;
+  font-size: 15px;
+  line-height: 27px;
+  padding: 10px;
+  position: relative;
+}
+
+.owl-dt-calendar-table .owl-dt-calendar-header .owl-dt-weekdays th {
+  border: 0;
+  font-size: 12.5px;
+  font-weight: bold;
+  padding: .5em .3em;
+  text-align: center;
+}
+
+.owl-dt-calendar-table .owl-dt-calendar-header {
+  color: #666;
+}
+
+.owl-dt-calendar-table .owl-dt-calendar-header .owl-dt-calendar-table-divider:after {
+  display: none;
+}
+
+.owl-dt-inline-container .owl-dt-calendar,
+.owl-dt-popup-container .owl-dt-calendar {
+  height: 27.25em;
+}
+
+.owl-dt-calendar-table .owl-dt-calendar-cell-content {
+  border: none;
+  border-radius: 5px;
+}
+
+.owl-dt-calendar-table .owl-dt-calendar-cell-selected {
+  color: #FFF;
+  background-color: #3498db;
+}
+
+.owl-dt-container-buttons {
+  height: 4em;
+}
+
+.owl-dt-control-period-button .owl-dt-control-button-arrow svg {
+  fill: #3498db;
+}
+
+.owl-dt-container-buttons.owl-dt-container-row.ng-tns-c4-0.ng-star-inserted {
+  -webkit-border-radius: 3px;
+  -webkit-user-drag: none;
+  background: #f8f8f8;
+  border-radius: 3px;
+  border-top: 1px solid #DDD;
+  color: #3498db;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-size: 15px;
+  line-height: normal;
+  margin-right: 10px;
+  min-height: 45px;
+  overflow: visible;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.2);
+  vertical-align: middle;
+}
+
+.owl-dt-timer-content .owl-dt-timer-input {
+  border: none;
+}
+
+.owl-dt-calendar-table .owl-dt-calendar-cell-content {
+  font-size: 1em;
+}
+
+/*LOADING*/
+.loading .back {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, .288);
+  height: 100%;
+  left: 0;
+  opacity: 0.35;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 88888;
+}
+
+.loading .container {
+  border: 1px solid cadetblue;
+  left: 0;
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  z-index: 99999;
+}
+
+.loading .legend {
+  background-color: #f4f4f4;
+  display: inline-block;
+  height: 250px;
+  overflow-y: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.loading img {
+  filter: contrast(1) invert(1) blur(0.25px);
+  max-width: 300px;
+  opacity: 0.5;
+  transform: translateY(-8%);
+}
+
+.loading .texto {
+  color: #b3b3b3;
+  display: inline-block;
+  font-size: 2em;
+}
+
+.cdk-overlay-container {
+  z-index: 9999;
+}
+
+.mat-dialog-container {
+  background-color: #FFF;
+  border-radius: 11px;
+  border: 1px solid #aaaaaa70;
+  color: #666;
+  overflow-x: hidden !important;
+  padding: 0 !important;
+}
+
+.cdk-overlay-dark-backdrop {
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, .288);
+}
+
+/*Portada*/
+a.mPanel {
+  transition: all 0.45s ease;
+}
+
+a.mPanel:hover {
+  transform: translateY(-5px);
+}
+
+/*Roles*/
+.estatus {
+  display: block;
+  left: 100%;
+  margin-left: 15%;
+  margin-top: 7%;
+  position: absolute;
+  top: 0;
+}
+
+.admin-form .section-divider span.nodo {
+  border-radius: 3px;
+  border: 2px solid #e0dfdf;
+  color: #d6d5d5;
+  display: block;
+  font-size: 1.25em;
+  height: 30px;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-top: 6px;
+  padding: 0;
+  text-align: center;
+  top: -16px;
+  width: 30px;
+  z-index: 99;
+}
+
+.admin-form .section-divider span.nodo.selecto {
+  border-color: #379adc;
+  color: #4e4e4ecf;
+  font-weight: bold;
+}
+
+.admin-form .section-divider span.nodo.selecto.pasado {
+  background-color: #379adc;
+  color: #FFF;
+}
+
+.admin-form .section-divider span.nodo.selecto+.nodo-leyenda {
+  color: #545454;
+}
+
+.nodo-leyenda {
+  display: block;
+  padding: 10px 5px;
+}
+
+.admin-form .section-divider.nodo-container {
+  display: inline-block;
+  padding-top: 0 !important;
+  vertical-align: middle;
+  width: calc(100% / 3);
+}
+
+.admin-form .section-divider span.contenido {
+  background-color: transparent;
+  left: 0;
+  padding-top: 9px;
+  padding: 0;
+  top: 0;
+}
+
+.section-divider.nodo-container.primero:after {
+  background: #FFF;
+  content: '';
+  display: block;
+  height: 17px;
+  left: 0;
+  position: absolute;
+  top: -9px;
+  width: 50%;
+}
+
+.section-divider.nodo-container.ultimo:after {
+  background: #FFF;
+  content: '';
+  display: block;
+  height: 17px;
+  position: absolute;
+  right: 0;
+  top: -9px;
+  width: 50%;
+}
+
+/*Menu*/
+a[data-link] {
+  cursor: pointer;
+}
+
+/*Columnas*/
+
+table.dataTable thead .sorting.desactivar:after,
+table.dataTable thead .sorting.desactivar:after,
+table.dataTable thead .sorting_asc.desactivar:after,
+table.dataTable thead .sorting_asc_disabled.desactivar:after,
+table.dataTable thead .sorting_desc.desactivar:after,
+table.dataTable thead .sorting_desc_disabled.desactivar:after,
+th.sorting_asc_disabled.sorting_desc_disabled.desactivar:after {
+  content: 'Desactivar'
+}
+
+table.dataTable thead .sorting.detalle:after,
+table.dataTable thead .sorting.detalle:after,
+table.dataTable thead .sorting_asc.detalle:after,
+table.dataTable thead .sorting_asc_disabled.detalle:after,
+table.dataTable thead .sorting_desc.detalle:after,
+table.dataTable thead .sorting_desc_disabled.detalle:after,
+th.sorting_asc_disabled.sorting_desc_disabled.detalle:after {
+  content: 'Detalles'
+}
+
+table.dataTable thead .sorting.actualizar:after,
+table.dataTable thead .sorting.actualizar:after,
+table.dataTable thead .sorting_asc.actualizar:after,
+table.dataTable thead .sorting_asc_disabled.actualizar:after,
+table.dataTable thead .sorting_desc.actualizar:after,
+table.dataTable thead .sorting_desc_disabled.actualizar:after,
+th.sorting_asc_disabled.sorting_desc_disabled.actualizar:after {
+  content: 'Actualizar'
+}
+
+table.dataTable thead .sorting.editar:after,
+table.dataTable thead .sorting.editar:after,
+table.dataTable thead .sorting_asc.editar:after,
+table.dataTable thead .sorting_asc_disabled.editar:after,
+table.dataTable thead .sorting_desc.editar:after,
+table.dataTable thead .sorting_desc_disabled.editar:after,
+th.sorting_asc_disabled.sorting_desc_disabled.editar:after {
+  content: 'Editar'
+}
+
+table.dataTable thead .sorting.gabinete:after,
+table.dataTable thead .sorting.gabinete:after,
+table.dataTable thead .sorting_asc.gabinete:after,
+table.dataTable thead .sorting_asc_disabled.gabinete:after,
+table.dataTable thead .sorting_desc.gabinete:after,
+table.dataTable thead .sorting_desc_disabled.gabinete:after,
+th.sorting_asc_disabled.sorting_desc_disabled.gabinete:after {
+  content: 'Gabinete'
+}
+
+table.dataTable thead .sorting.lectura:after,
+table.dataTable thead .sorting.lectura:after,
+table.dataTable thead .sorting_asc.lectura:after,
+table.dataTable thead .sorting_asc_disabled.lectura:after,
+table.dataTable thead .sorting_desc.lectura:after,
+table.dataTable thead .sorting_desc_disabled.lectura:after,
+th.sorting_asc_disabled.sorting_desc_disabled.lectura:after {
+  content: 'Lectura'
+}
+
+table.dataTable thead .sorting.evento:after,
+table.dataTable thead .sorting.evento:after,
+table.dataTable thead .sorting_asc.evento:after,
+table.dataTable thead .sorting_asc_disabled.evento:after,
+table.dataTable thead .sorting_desc.evento:after,
+table.dataTable thead .sorting_desc_disabled.evento:after,
+th.sorting_asc_disabled.sorting_desc_disabled.evento:after {
+  content: 'Evento'
+}
+
+table.dataTable thead .sorting.status:after,
+table.dataTable thead .sorting.status:after,
+table.dataTable thead .sorting_asc.status:after,
+table.dataTable thead .sorting_asc_disabled.status:after,
+table.dataTable thead .sorting_desc.status:after,
+table.dataTable thead .sorting_desc_disabled.status:after,
+th.sorting_asc_disabled.sorting_desc_disabled.status:after {
+  content: 'Estatus'
+}
+
+table.dataTable thead .sorting.instalación:after,
+table.dataTable thead .sorting.instalación:after,
+table.dataTable thead .sorting_asc.instalación:after,
+table.dataTable thead .sorting_asc_disabled.instalación:after,
+table.dataTable thead .sorting_desc.instalación:after,
+table.dataTable thead .sorting_desc_disabled.instalación:after,
+th.sorting_asc_disabled.sorting_desc_disabled.instalación:after {
+  content: 'Instalación'
+}
+
+table.dataTable thead .sorting.medidores:after,
+table.dataTable thead .sorting.medidores:after,
+table.dataTable thead .sorting_asc.medidores:after,
+table.dataTable thead .sorting_asc_disabled.medidores:after,
+table.dataTable thead .sorting_desc.medidores:after,
+table.dataTable thead .sorting_desc_disabled.medidores:after,
+th.sorting_asc_disabled.sorting_desc_disabled.medidores:after {
+  content: 'Medidores'
+}
+
+table.dataTable thead .sorting.inventario:after,
+table.dataTable thead .sorting.inventario:after,
+table.dataTable thead .sorting_asc.inventario:after,
+table.dataTable thead .sorting_asc_disabled.inventario:after,
+table.dataTable thead .sorting_desc.inventario:after,
+table.dataTable thead .sorting_desc_disabled.inventario:after,
+th.sorting_asc_disabled.sorting_desc_disabled.inventario:after {
+  content: 'Inventario'
+}
+
+table.dataTable thead .sorting.desactivar:after,
+table.dataTable thead .sorting.desactivar:after,
+table.dataTable thead .sorting_asc.desactivar:after,
+table.dataTable thead .sorting_asc_disabled.desactivar:after,
+table.dataTable thead .sorting_desc.desactivar:after,
+table.dataTable thead .sorting_desc_disabled.desactivar:after,
+th.sorting_asc_disabled.sorting_desc_disabled.desactivar:after {
+  content: 'Desactivar'
+}
+
+table.dataTable thead .sorting.asociar:after,
+table.dataTable thead .sorting.asociar:after,
+table.dataTable thead .sorting_asc.asociar:after,
+table.dataTable thead .sorting_asc_disabled.asociar:after,
+table.dataTable thead .sorting_desc.asociar:after,
+table.dataTable thead .sorting_desc_disabled.asociar:after,
+th.sorting_asc_disabled.sorting_desc_disabled.asociar:after {
+  content: 'Asociaciones'
+}
+
+table.dataTable thead .sorting.servicio:after,
+table.dataTable thead .sorting.servicio:after,
+table.dataTable thead .sorting_asc.servicio:after,
+table.dataTable thead .sorting_asc_disabled.servicio:after,
+table.dataTable thead .sorting_desc.servicio:after,
+table.dataTable thead .sorting_desc_disabled.servicio:after,
+th.sorting_asc_disabled.sorting_desc_disabled.servicio:after {
+  content: 'Servicio'
+}
+
+table.dataTable thead .sorting.display:after,
+table.dataTable thead .sorting.display:after,
+table.dataTable thead .sorting_asc.display:after,
+table.dataTable thead .sorting_asc_disabled.display:after,
+table.dataTable thead .sorting_desc.display:after,
+table.dataTable thead .sorting_desc_disabled.display:after,
+th.sorting_asc_disabled.sorting_desc_disabled.display:after {
+  content: 'Display'
+}
+
+table.dataTable thead .sorting.xml:after,
+table.dataTable thead .sorting.xml:after,
+table.dataTable thead .sorting_asc.xml:after,
+table.dataTable thead .sorting_asc_disabled.xml:after,
+table.dataTable thead .sorting_desc.xml:after,
+table.dataTable thead .sorting_desc_disabled.xml:after,
+th.sorting_asc_disabled.sorting_desc_disabled.xml:after {
+  content: 'XML'
+}
+
+table.dataTable thead .sorting.job:after,
+table.dataTable thead .sorting.job:after,
+table.dataTable thead .sorting_asc.job:after,
+table.dataTable thead .sorting_asc_disabled.job:after,
+table.dataTable thead .sorting_desc.job:after,
+table.dataTable thead .sorting_desc_disabled.job:after,
+th.sorting_asc_disabled.sorting_desc_disabled.job:after {
+  content: 'Job'
+}
+
+
+table.dataTable thead .sorting.password:after,
+table.dataTable thead .sorting.password:after,
+table.dataTable thead .sorting_asc.password:after,
+table.dataTable thead .sorting_asc_disabled.password:after,
+table.dataTable thead .sorting_desc.password:after,
+table.dataTable thead .sorting_desc_disabled.password:after,
+th.sorting_asc_disabled.sorting_desc_disabled.password:after {
+  content: 'Contraseña'
+}
+
+table.dataTable thead .sorting.profile:after,
+table.dataTable thead .sorting.profile:after,
+table.dataTable thead .sorting_asc.profile:after,
+table.dataTable thead .sorting_asc_disabled.profile:after,
+table.dataTable thead .sorting_desc.profile:after,
+table.dataTable thead .sorting_desc_disabled.profile:after,
+th.sorting_asc_disabled.sorting_desc_disabled.profile:after {
+  content: 'Perfil'
+}
+
+table.dataTable thead .sorting.sincronia:after,
+table.dataTable thead .sorting.sincronia:after,
+table.dataTable thead .sorting_asc.sincronia:after,
+table.dataTable thead .sorting_asc_disabled.sincronia:after,
+table.dataTable thead .sorting_desc.sincronia:after,
+table.dataTable thead .sorting_desc_disabled.sincronia:after,
+th.sorting_asc_disabled.sorting_desc_disabled.sincronia:after {
+  content: 'Sincronizar'
+}
+
+table.dataTable thead .sorting.update:after,
+table.dataTable thead .sorting.update:after,
+table.dataTable thead .sorting_asc.update:after,
+table.dataTable thead .sorting_asc_disabled.update:after,
+table.dataTable thead .sorting_desc.update:after,
+table.dataTable thead .sorting_desc_disabled.update:after,
+th.sorting_asc_disabled.sorting_desc_disabled.update:after {
+  content: 'Actualización'
+}
+
+
+.admin-form button,
+.admin-form input,
+.admin-form label,
+.admin-form select,
+.admin-form textarea {
+  margin: 0 auto;
+}
+
+/*Clear Filters*/
+span.fa-brush {
+  font-size: 1.25em;
+  transform: rotate(208deg) !important;
+}
+
+/*Filtros de reportes de lecturas a medidores programadas*/
+.ng-select.ng-select-multiple[reporte] .ng-select-container .ng-value-container .ng-value .ng-value-label {
+  word-break: break-all;
+  white-space: pre-line;
+}
+
+/* ipad Mini Portrait */
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .admin-form .section-divider.nodo-container {
+    margin-bottom: 25% !important;
+  }
+
+  .panel-control-titulo {
+    font-size: 0.65em;
+  }
+
+  .panel-control-contenedor {
+    border: 0;
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
+  .admin-form .section-divider.nodo-container {
+    margin-bottom: 25% !important;
+  }
+
+  .panel-control-titulo {
+    font-size: 0.65em;
+  }
+
+  .panel-control-contenedor {
+    border: 0;
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {
+  .admin-form .section-divider.nodo-container {
+    margin-bottom: 25% !important;
+  }
+
+
+  .panel-control-titulo {
+    font-size: 0.65em;
+  }
+
+  .panel-control-contenedor {
+    border: 0;
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+}
+
+/* ipad Mini Portrait */
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .loading .legend p {
+    position: absolute;
+    left: 28%;
+    top: 83%;
+    font-size: 0.75em;
+    width: 100%;
+  }
+
+  .loading .container {
+    top: 25%;
+  }
+}
+
+@media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
+  .loading .legend p {
+    position: absolute;
+    left: 28%;
+    top: 83%;
+    font-size: 0.75em;
+    width: 100%;
+  }
+
+  .loading .container {
+    top: 25%;
+  }
+}
+
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {
+  .loading .legend p {
+    position: absolute;
+    left: 28%;
+    top: 83%;
+    font-size: 0.75em;
+    width: 100%;
+  }
+
+  .loading .container {
+    top: 25%;
+  }
+
+
+  .panel-control-titulo {
+    font-size: 0.65em;
+  }
+
+  .panel-control-contenedor {
+    border: 0;
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+}
