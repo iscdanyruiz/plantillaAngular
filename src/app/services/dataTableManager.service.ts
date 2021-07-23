@@ -116,6 +116,7 @@ import {
   
     onAplyStyles(settings: any, json: any) {
       var oWrapperContainer = document.querySelectorAll(".admin-form > [id^='datatable']");
+      debugger;
       oWrapperContainer.forEach(element => {
         var oDTLenght = jQuery(element).find(".dataTables_length"),
           oDTFilter = jQuery(element).find(".dataTables_filter"),

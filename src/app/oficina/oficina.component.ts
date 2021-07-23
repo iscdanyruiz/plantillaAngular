@@ -25,7 +25,7 @@ import {
   selector: "app-oficina",
   templateUrl: "./oficina.component.html",
   styleUrls: ["./oficina.component.css"],
-  providers: [DataTableManager, DataTableDirective, PeticionesService]
+  providers: [DataTableManager, PeticionesService]
 })
 export class OficinaComponent implements OnInit, OnDestroy, AfterViewInit {
 
@@ -45,7 +45,7 @@ export class OficinaComponent implements OnInit, OnDestroy, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    this.dataTableManager.sortColNumber = 1;
+    this.dataTableManager.sortColNumber = 0;
     this.dataTableManager.sortAsc = "desc";
     this.dtOptions.push(this.dataTableManager.onInitializeDtOptions(this.title));
   }
@@ -61,12 +61,7 @@ export class OficinaComponent implements OnInit, OnDestroy, AfterViewInit {
   cargarEmpleados() {
     this._peticionesService.getEmployees().subscribe(
       (employees: any) => {
-        this.employees = new Array();
-        employees.data.map(
-          (employee: any) => {
-            this.employees.push(employee);
-          }
-        );
+        this.employees = employees.data;
         this.dataTableManager.rerender(this.dtElement, this.dtTrigger, 0);
       },
       error => {
