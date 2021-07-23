@@ -116,7 +116,6 @@ import {
   
     onAplyStyles(settings: any, json: any) {
       var oWrapperContainer = document.querySelectorAll(".admin-form > [id^='datatable']");
-      debugger;
       oWrapperContainer.forEach(element => {
         var oDTLenght = jQuery(element).find(".dataTables_length"),
           oDTFilter = jQuery(element).find(".dataTables_filter"),
@@ -178,7 +177,6 @@ import {
   
     rerender(dtElement: DataTableDirective, dtTrigger: Subject < any > , index: number = 0): void {
       if (typeof dtElement.dtInstance !== "undefined") {
-        debugger;
         dtElement.dtInstance.then((dtInstance: any) => {
           console.log(`The DataTable ${index} instance ID is: ${dtInstance.table().node().id}`);
           dtInstance.clear().destroy();
