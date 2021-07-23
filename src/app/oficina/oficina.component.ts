@@ -20,6 +20,9 @@ import {
 import {
   DataTableManager
 } from "../services/dataTableManager.service";
+import {
+  MatDialog
+} from '@angular/material';
 
 @Component({
   selector: "app-oficina",
@@ -41,7 +44,8 @@ export class OficinaComponent implements OnInit, OnDestroy, AfterViewInit {
 
   constructor(
     private dataTableManager: DataTableManager,
-    private _peticionesService: PeticionesService
+    private _peticionesService: PeticionesService,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit() {
@@ -70,4 +74,14 @@ export class OficinaComponent implements OnInit, OnDestroy, AfterViewInit {
     );
   }
 
+  openDialog() {
+    this.dialog.open(DialogElementsExampleDialog);
+  }
+
 }
+
+@Component({
+  selector: 'dialog-elements-example-dialog',
+  templateUrl: 'dialog-elements-example-dialog.html',
+})
+export class DialogElementsExampleDialog {}
