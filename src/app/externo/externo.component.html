@@ -29,7 +29,7 @@
   </p>
   <p>
     <label for="job">Trabajo</label>
-    <input type="text" name="job" #name="ngModel" [(ngModel)]="new_user.job" />
+    <input type="text" name="job" #job="ngModel" [(ngModel)]="new_user.job" />
     <span *ngIf="job.touched && !job.valid">El trabajo no es valido</span>
   </p>
 
