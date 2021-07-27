@@ -24,20 +24,20 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-              "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "./src/assets/multiselect/css/multi-select.css",
+              "node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/assets/multiselect/css/multi-select.css",
               "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
-              "./src/assets/material.min.css",
-              "./src/assets/datatables.net-dt/css/jquery.dataTables.css",
-              "./src/assets/theme.css"
+              "src/assets/material.min.css",
+              "src/assets/datatables.net-dt/css/jquery.dataTables.css",
+              "src/assets/theme.css",
+              "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/datatables.net/js/jquery.dataTables.js",
-              "./src/assets/multiselect/js/jquery.multi-select.js",
+              "src/assets/multiselect/js/jquery.multi-select.js",
               "node_modules/jszip/dist/jszip.js",
               "node_modules/datatables.net-buttons/js/dataTables.buttons.js",
               "node_modules/datatables.net-buttons/js/buttons.colVis.js",
@@ -141,6 +141,6 @@
   },
   "defaultProject": "aprendiendo-angular",
   "cli": {
-    "analytics": "45dbc332-6be2-4013-b0ca-178af380f0d9"
+    "analytics": false
   }
 }
